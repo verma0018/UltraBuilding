@@ -24,7 +24,27 @@
             $('.navbar').removeClass('sticky-top shadow-sm');
         }
     });
+
+
+    // Function to change the image source
+    $(document).ready(function(){
+        
+        function changeImage() {
+            if ($(window).width() < 992) {
+                $('#myImage').attr('src', 'img/logo-color.png');
+            } else {
+                $('#myImage').attr('src', 'img/logo-light.png');
+            }
+        }
     
+        // Initial call to changeImage
+        changeImage();
+    
+        // Event listener for window resize
+        $(window).resize(function() {
+            changeImage();
+        });
+    });
     
     // Back to top button
     $(window).scroll(function () {
