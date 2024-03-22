@@ -18,10 +18,15 @@
 
     // Sticky Navbar
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 45) {
+        if ($(this).scrollTop() > 45 & $(window).width() > 992) {
             $('.navbar').addClass('sticky-top shadow-sm');
+            $('#myImage').attr('src', 'img/newLogo.png');
         } else {
-            $('.navbar').removeClass('sticky-top shadow-sm');
+            if(!($(window).width() < 992)){
+                $('.navbar').removeClass('sticky-top shadow-sm');
+                $('#myImage').attr('src', 'img/newLogo-light.png');
+            }
+            
         }
     });
 
@@ -31,9 +36,9 @@
         
         function changeImage() {
             if ($(window).width() < 992) {
-                $('#myImage').attr('src', 'img/logo-color.png');
+                $('#myImage').attr('src', 'img/newLogo.png');
             } else {
-                $('#myImage').attr('src', 'img/logo-light.png');
+                $('#myImage').attr('src', 'img/newLogo-light.png');
             }
         }
     
