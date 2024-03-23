@@ -223,6 +223,10 @@
 .index-head h1{
     text-align: left !important;
 }
+
+.hero-header .hero-img{
+    border-radius: 2%;
+}
 .page-header {
     margin-bottom: 6rem;
     padding: 12rem 0 6rem 0;
@@ -247,7 +251,7 @@
 
 .about-img{
     width: 75%;
-    border-radius: 20%;
+    border-radius: 5%;
     margin-left: 5%;
 }
 
