@@ -20,11 +20,11 @@
     $(window).scroll(function () {
         if ($(this).scrollTop() > 45 & $(window).width() > 992) {
             $('.navbar').addClass('sticky-top shadow-sm');
-            $('#myImage').attr('src', 'img/newLogo.png');
+            // $('#myImage').attr('src', 'img/newLogo.png');
         } else {
             if(!($(window).width() < 992)){
                 $('.navbar').removeClass('sticky-top shadow-sm');
-                $('#myImage').attr('src', 'img/newLogo-light.png');
+                // $('#myImage').attr('src', 'img/newLogo-light.png');
             }
             
         }
@@ -32,24 +32,24 @@
 
 
     // Function to change the image source
-    $(document).ready(function(){
+    // $(document).ready(function(){
         
-        function changeImage() {
-            if ($(window).width() < 992) {
-                $('#myImage').attr('src', 'img/newLogo.png');
-            } else {
-                $('#myImage').attr('src', 'img/newLogo-light.png');
-            }
-        }
+    //     function changeImage() {
+    //         if ($(window).width() < 992) {
+    //             $('#myImage').attr('src', 'img/newLogo.png');
+    //         } else {
+    //             $('#myImage').attr('src', 'img/newLogo-light.png');
+    //         }
+    //     }
     
-        // Initial call to changeImage
-        changeImage();
+    //     // Initial call to changeImage
+    //     changeImage();
     
-        // Event listener for window resize
-        $(window).resize(function() {
-            changeImage();
-        });
-    });
+    //     // Event listener for window resize
+    //     $(window).resize(function() {
+    //         changeImage();
+    //     });
+    // });
     
     // Back to top button
     $(window).scroll(function () {
